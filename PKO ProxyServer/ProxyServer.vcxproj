@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{E54BF261-512B-4F73-A51A-ED95EDC59129}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>PKO ProxyServer</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>ProxyServer</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(ProjectDir)\..\libevent\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)\..\libevent\lib;$(ProjectDir)\..\openssl\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>D:\Projects\lib\libevent\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\Projects\lib\libevent\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(ProjectDir)\..\libevent\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)\..\libevent\lib;$(ProjectDir)\..\openssl\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>D:\Projects\lib\libevent\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\Projects\lib\libevent\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>ws2_32.lib;Iphlpapi.lib;event.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\Denis\Проекты\PKO Projects\Proxy Server\openssl\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>ws2_32.lib;Iphlpapi.lib;event.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\Denis\Проекты\PKO Projects\Proxy Server\openssl\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Binary\BaseBinaryIO.cpp" />
+    <ClCompile Include="Binary\BinaryReader.cpp" />
+    <ClCompile Include="Binary\BinaryWriter.cpp" />
+    <ClCompile Include="Class\Account\Account.cpp" />
+    <ClCompile Include="Class\Character\Character.cpp" />
+    <ClCompile Include="Class\DES\DES.cpp" />
+    <ClCompile Include="Class\PacketEncoder\PacketEncoder.cpp" />
+    <ClCompile Include="Class\PacketEncryptor\PacketEncryptor.cpp" />
+    <ClCompile Include="Class\PasswordEncoder\PasswordEncoder.cpp" />
+    <ClCompile Include="Class\Player\Player.cpp" />
+    <ClCompile Include="Class\Protection\Protection.cpp" />
+    <ClCompile Include="Class\ProxyServer\ProxyServer.cpp" />
+    <ClCompile Include="Class\SetStall\SetStall.cpp" />
+    <ClCompile Include="Class\Settings\Settings.cpp" />
+    <ClCompile Include="Class\Utils\Utils.cpp" />
+    <ClCompile Include="Client\ClientPacketHandlerManager.cpp" />
+    <ClCompile Include="Client\PacketHandler\AccountLoginHandler.cpp" />
+    <ClCompile Include="Client\PacketHandler\BeginPlayHandler.cpp" />
+    <ClCompile Include="Client\PacketHandler\ChangePasswordHandler.cpp" />
+    <ClCompile Include="Client\PacketHandler\CreatePasswordHandler.cpp" />
+    <ClCompile Include="Client\PacketHandler\DisconnectHandler.cpp" />
+    <ClCompile Include="Client\PacketHandler\EndPlayHandler.cpp" />
+    <ClCompile Include="Client\PacketHandler\NewChaHandle.cpp" />
+    <ClCompile Include="Client\PacketHandler\SetStallCloseHandler.cpp" />
+    <ClCompile Include="Client\PacketHandler\SetStallInfoHandler.cpp" />
+    <ClCompile Include="Client\Packet\DisconnectPacket.cpp" />
+    <ClCompile Include="Client\Packet\LoginPacket.cpp" />
+    <ClCompile Include="Client\Packet\PingPacket.cpp" />
+    <ClCompile Include="Main\PacketHandlerManager.cpp" />
+    <ClCompile Include="Main\PKO ProxyServer.cpp" />
+    <ClCompile Include="Pool\ObjectPool.cpp" />
+    <ClCompile Include="Pool\PlayerMaker.cpp" />
+    <ClCompile Include="Server\PacketHandler\BeginSeeHandler.cpp" />
+    <ClCompile Include="Server\PacketHandler\CActionHandler.cpp" />
+    <ClCompile Include="Server\PacketHandler\ChapStringHandler.cpp" />
+    <ClCompile Include="Server\PacketHandler\EnterMapHandler.cpp" />
+    <ClCompile Include="Server\PacketHandler\GMNoticeHandler.cpp" />
+    <ClCompile Include="Server\PacketHandler\LoginResultHandler.cpp" />
+    <ClCompile Include="Server\PacketHandler\PingHandler.cpp" />
+    <ClCompile Include="Server\PacketHandler\SetStallBuyHandler.cpp" />
+    <ClCompile Include="Server\PacketHandler\SetStallSuccessHandler.cpp" />
+    <ClCompile Include="Server\PacketHandler\SynKitbagHandler.cpp" />
+    <ClCompile Include="Server\PacketHandler\SysInfoHandler.cpp" />
+    <ClCompile Include="Server\Packet\CreatePasswordPacket.cpp" />
+    <ClCompile Include="Server\Packet\GMNoticePacket.cpp" />
+    <ClCompile Include="Server\Packet\PopupNoticePacket.cpp" />
+    <ClCompile Include="Server\Packet\UpdatePasswordPacket.cpp" />
+    <ClCompile Include="Server\Packet\WrongLoginPacket.cpp" />
+    <ClCompile Include="Server\Packet\WrongNewChaPacket.cpp" />
+    <ClCompile Include="Server\Packet\WrongVersionPacket.cpp" />
+    <ClCompile Include="Server\ServerPacketHandlerManager.cpp" />
+    <ClCompile Include="Socket\BaseSocket.cpp" />
+    <ClCompile Include="Socket\callback.cpp" />
+    <ClCompile Include="Socket\ClientSocket.cpp" />
+    <ClCompile Include="Socket\NetBuffer.cpp" />
+    <ClCompile Include="Socket\ServerSocket.cpp" />
+    <ClCompile Include="Thread\ThreadPool.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Binary\BaseBinaryIO.h" />
+    <ClInclude Include="Binary\BinaryReader.h" />
+    <ClInclude Include="Binary\BinaryWriter.h" />
+    <ClInclude Include="Class\Account\Account.h" />
+    <ClInclude Include="Class\Character\Character.h" />
+    <ClInclude Include="Class\DES\DES.h" />
+    <ClInclude Include="Class\PacketEncoder\PacketEncoder.h" />
+    <ClInclude Include="Class\PacketEncryptor\PacketEncryptor.h" />
+    <ClInclude Include="Class\PasswordEncoder\PasswordEncoder.h" />
+    <ClInclude Include="Class\Player\Player.h" />
+    <ClInclude Include="Class\Protection\Protection.h" />
+    <ClInclude Include="Class\ProxyServer\ProxyServer.h" />
+    <ClInclude Include="Class\SetStall\SetStall.h" />
+    <ClInclude Include="Class\Settings\Settings.h" />
+    <ClInclude Include="Class\Utils\Utils.h" />
+    <ClInclude Include="Class\WebServer\httplib.h" />
+    <ClInclude Include="Class\WebServer\json.hpp" />
+    <ClInclude Include="Client\ClientPacketHandlerManager.h" />
+    <ClInclude Include="Client\PacketHandler\AccountLoginHandler.h" />
+    <ClInclude Include="Client\PacketHandler\BeginPlayHandler.h" />
+    <ClInclude Include="Client\PacketHandler\ChangePasswordHandler.h" />
+    <ClInclude Include="Client\PacketHandler\CreatePasswordHandler.h" />
+    <ClInclude Include="Client\PacketHandler\DisconnectHandler.h" />
+    <ClInclude Include="Client\PacketHandler\EndPlayHandler.h" />
+    <ClInclude Include="Client\PacketHandler\NewChaHandle.h" />
+    <ClInclude Include="Client\PacketHandler\SetStallCloseHandler.h" />
+    <ClInclude Include="Client\PacketHandler\SetStallInfoHandler.h" />
+    <ClInclude Include="Client\Packet\DisconnectPacket.h" />
+    <ClInclude Include="Client\Packet\LoginPacket.h" />
+    <ClInclude Include="Client\Packet\PingPacket.h" />
+    <ClInclude Include="Main\IPacket.h" />
+    <ClInclude Include="Main\IPacketHandler.h" />
+    <ClInclude Include="Main\PacketHandlerManager.h" />
+    <ClInclude Include="Pool\IObjectMaker.h" />
+    <ClInclude Include="Pool\IPoolable.h" />
+    <ClInclude Include="Pool\ObjectPool.h" />
+    <ClInclude Include="Pool\PlayerMaker.h" />
+    <ClInclude Include="Protect\Protect.h" />
+    <ClInclude Include="Server\PacketHandler\BeginSeeHandler.h" />
+    <ClInclude Include="Server\PacketHandler\CActionHandler.h" />
+    <ClInclude Include="Server\PacketHandler\ChapStringHandler.h" />
+    <ClInclude Include="Server\PacketHandler\EnterMapHandler.h" />
+    <ClInclude Include="Server\PacketHandler\GMNoticeHandler.h" />
+    <ClInclude Include="Server\PacketHandler\LoginResultHandler.h" />
+    <ClInclude Include="Server\PacketHandler\PingHandler.h" />
+    <ClInclude Include="Server\PacketHandler\SetStallBuyHandler.h" />
+    <ClInclude Include="Server\PacketHandler\SetStallSuccessHandler.h" />
+    <ClInclude Include="Server\PacketHandler\SynKitbagHandler.h" />
+    <ClInclude Include="Server\PacketHandler\SysInfoHandler.h" />
+    <ClInclude Include="Server\Packet\CreatePasswordPacket.h" />
+    <ClInclude Include="Server\Packet\GMNoticePacket.h" />
+    <ClInclude Include="Server\Packet\PopupNoticePacket.h" />
+    <ClInclude Include="Server\Packet\UpdatePasswordPacket.h" />
+    <ClInclude Include="Server\Packet\WrongLoginPacket.h" />
+    <ClInclude Include="Server\Packet\WrongNewChaPacket.h" />
+    <ClInclude Include="Server\Packet\WrongVersionPacket.h" />
+    <ClInclude Include="Server\ServerPacketHandlerManager.h" />
+    <ClInclude Include="Socket\BaseSocket.h" />
+    <ClInclude Include="Socket\callback.h" />
+    <ClInclude Include="Socket\ClientSocket.h" />
+    <ClInclude Include="Socket\INetObserver.h" />
+    <ClInclude Include="Socket\INetSubject.h" />
+    <ClInclude Include="Socket\ISocket.h" />
+    <ClInclude Include="Socket\NetBuffer.h" />
+    <ClInclude Include="Socket\ServerSocket.h" />
+    <ClInclude Include="Struct\stNetChangeChaPart.h" />
+    <ClInclude Include="Thread\ThreadPool.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,564 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Файлы исходного кода">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Заголовочные файлы">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="PacketHandler">
+      <UniqueIdentifier>{9be57401-64e9-4954-b319-aa8b2b17351a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PacketHandler\Client">
+      <UniqueIdentifier>{0e575546-f4b2-4683-8b2e-262e0a5e851d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PacketHandler\Server">
+      <UniqueIdentifier>{e3c9801d-30f5-4803-8356-717755a98ce4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Packet">
+      <UniqueIdentifier>{b625098c-02c7-4b39-98ce-3c4fbd23eeba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Packet\C-&gt;S">
+      <UniqueIdentifier>{a041814d-3a2f-4505-9e1b-48a5f985e616}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Packet\S-&gt;C">
+      <UniqueIdentifier>{7e851913-4b2b-4aa9-9bf3-8f7745e1481e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Packet\S-&gt;C\CreatePassword">
+      <UniqueIdentifier>{9bc99830-8e50-47c9-abec-ab81346296f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Packet\S-&gt;C\GMNotice">
+      <UniqueIdentifier>{70faa25b-0c19-488b-a630-4db8b93edacc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Packet\S-&gt;C\UpdatePassword">
+      <UniqueIdentifier>{28f0bcb8-58ca-4557-8bee-af14aed302c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Packet\S-&gt;C\WrongLogin">
+      <UniqueIdentifier>{faad2343-79bd-4148-a664-7307546a6a54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Packet\S-&gt;C\WrongNewCha">
+      <UniqueIdentifier>{5e23b1fc-1809-426b-af6e-3027a9d148f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Packet\S-&gt;C\WrongVersion">
+      <UniqueIdentifier>{492c44e8-714c-4e86-8441-fea84822ed03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Packet\C-&gt;S\Disconnect">
+      <UniqueIdentifier>{517487b0-c9c7-4ddc-8960-5c0b2b0134b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Packet\C-&gt;S\Login">
+      <UniqueIdentifier>{e479be92-75b7-4fd4-9f33-2053641d83fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Packet\C-&gt;S\Ping">
+      <UniqueIdentifier>{1703e5cf-1fb9-45bd-a327-aa516e9e0061}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PacketHandler\Client\AccountLogin">
+      <UniqueIdentifier>{12787143-02b8-44d8-bf31-2a8c1b8d6630}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PacketHandler\Client\ChangePassword">
+      <UniqueIdentifier>{898d140e-918a-4f91-8b8f-ecb58ff9349e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PacketHandler\Client\CreatePassword">
+      <UniqueIdentifier>{bf67cd1d-0b3a-4fe8-ab51-512220ba5647}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PacketHandler\Client\Disconnect">
+      <UniqueIdentifier>{a08a5312-da80-4e33-899c-d302afaa403a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PacketHandler\Client\NewCha">
+      <UniqueIdentifier>{c0c410b6-ca7a-4ea1-b80d-73187cacdf2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PacketHandler\Client\SetStallClose">
+      <UniqueIdentifier>{3d450eaf-0ca8-43b5-80db-e25161817597}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PacketHandler\Client\SetStallInfo">
+      <UniqueIdentifier>{c13695c6-d14d-46a5-b9b2-907ef6e5620f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PacketHandler\Server\CAction">
+      <UniqueIdentifier>{597a6829-8aff-4c70-980a-2efcd64edb08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PacketHandler\Server\ChapString">
+      <UniqueIdentifier>{15ce7baa-bbd7-4649-8fb6-b5d0cd055388}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PacketHandler\Server\EnterMap">
+      <UniqueIdentifier>{8a9904d1-b02b-46fa-b71b-aa41a48d3a7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PacketHandler\Server\LoginResult">
+      <UniqueIdentifier>{f37ae0bd-b416-475a-b07d-d5ab9d774825}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PacketHandler\Server\Ping">
+      <UniqueIdentifier>{09ca6bf9-fcaf-4f66-a00a-cbfde5ea8c27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PacketHandler\Server\SetStallBuy">
+      <UniqueIdentifier>{e831f77f-4b49-4049-a13f-4ad3348ddaa3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PacketHandler\Server\SetStallSuccess">
+      <UniqueIdentifier>{70088dc6-fcd7-4273-bea9-b44c0a67d989}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PacketHandler\Server\SynKitbag">
+      <UniqueIdentifier>{fbff15a2-ef78-4b4f-aa4b-4034fdbe245e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PacketHandler\Server\SysInfo">
+      <UniqueIdentifier>{5bee557e-8009-484f-835c-c7c83f4fe4fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PacketHandler\Server\GMNotice">
+      <UniqueIdentifier>{466e811f-c098-42af-b64b-3e5d3d74a492}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Class">
+      <UniqueIdentifier>{c6cebfe3-3f1e-42aa-957c-7304a407d9dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Class\Account">
+      <UniqueIdentifier>{14b7ffe0-cd9d-4c3c-bfca-ee97b6b39d3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Class\Character">
+      <UniqueIdentifier>{55894783-d8d4-4c29-950e-a04845877e8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Class\DES">
+      <UniqueIdentifier>{59507da5-c3c0-4a8f-8f18-aab12f5712af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Class\PacketEncoder">
+      <UniqueIdentifier>{3cd77e66-181c-4864-ad60-f68f8a8a9ebd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Class\PacketEncryptor">
+      <UniqueIdentifier>{5fb2e633-2c19-45e5-b640-4e29943146d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Class\PasswordEncoder">
+      <UniqueIdentifier>{88301b87-169e-4cab-8764-cd98f8922074}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Class\Player">
+      <UniqueIdentifier>{a7c604bc-a31b-4040-9193-594e81313975}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Class\Protection">
+      <UniqueIdentifier>{fea02881-f711-4dcb-a7ee-59032366c436}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Class\SetStall">
+      <UniqueIdentifier>{7d0c5f89-8a6e-4d8b-a1c7-3f8757f2dec7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Class\Settings">
+      <UniqueIdentifier>{9dbffe7d-cb25-4177-a3d9-ff4e84d018ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Class\Utils">
+      <UniqueIdentifier>{9a4fb603-cd28-48eb-bd35-12938c58a1fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Struct">
+      <UniqueIdentifier>{a7639ac6-7ca8-4d16-9b5c-8b75a72bf586}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Binary">
+      <UniqueIdentifier>{0a333cac-2605-4725-a580-0fd53faf3fc8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Socket">
+      <UniqueIdentifier>{a66c18ba-8baa-4812-9534-4c5a8ccc857f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pool">
+      <UniqueIdentifier>{4629f259-e0ee-4419-8c24-0a3a4708a201}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы исходного кода\Main">
+      <UniqueIdentifier>{16794721-b801-4a16-bfed-5300666bd377}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Class\ProxyServer">
+      <UniqueIdentifier>{9369bed4-e424-47ca-80c0-d1fef7dbfe69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Class\WebServer">
+      <UniqueIdentifier>{ff266e46-5e43-444f-8cb7-aa793ca13ecd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PacketHandler\Client\EndPlay">
+      <UniqueIdentifier>{ce829ccc-252c-41fb-82df-660d112dcb1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Protect">
+      <UniqueIdentifier>{3108cf58-ef2d-4f3b-8950-34313b47699e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PacketHandler\Client\BeginPlay">
+      <UniqueIdentifier>{3e6937c1-e843-4737-aa9f-31e5b729990f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Thread">
+      <UniqueIdentifier>{2d613d39-ca14-40c5-8d30-ce8027596c9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PacketHandler\Server\BeginSee">
+      <UniqueIdentifier>{b3bb3c78-c917-4cb4-9ef2-99caf3fecacb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Packet\S-&gt;C\PopupNotice">
+      <UniqueIdentifier>{e6581fc0-2598-45d3-926f-da5631e1d76a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Server\Packet\CreatePasswordPacket.cpp">
+      <Filter>Packet\S-&gt;C\CreatePassword</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\Packet\GMNoticePacket.cpp">
+      <Filter>Packet\S-&gt;C\GMNotice</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\Packet\UpdatePasswordPacket.cpp">
+      <Filter>Packet\S-&gt;C\UpdatePassword</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\Packet\WrongLoginPacket.cpp">
+      <Filter>Packet\S-&gt;C\WrongLogin</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\Packet\WrongNewChaPacket.cpp">
+      <Filter>Packet\S-&gt;C\WrongNewCha</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\Packet\WrongVersionPacket.cpp">
+      <Filter>Packet\S-&gt;C\WrongVersion</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\Packet\DisconnectPacket.cpp">
+      <Filter>Packet\C-&gt;S\Disconnect</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\Packet\LoginPacket.cpp">
+      <Filter>Packet\C-&gt;S\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\Packet\PingPacket.cpp">
+      <Filter>Packet\C-&gt;S\Ping</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\PacketHandler\AccountLoginHandler.cpp">
+      <Filter>PacketHandler\Client\AccountLogin</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\PacketHandler\ChangePasswordHandler.cpp">
+      <Filter>PacketHandler\Client\ChangePassword</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\PacketHandler\CreatePasswordHandler.cpp">
+      <Filter>PacketHandler\Client\CreatePassword</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\PacketHandler\DisconnectHandler.cpp">
+      <Filter>PacketHandler\Client\Disconnect</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\PacketHandler\NewChaHandle.cpp">
+      <Filter>PacketHandler\Client\NewCha</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\PacketHandler\SetStallInfoHandler.cpp">
+      <Filter>PacketHandler\Client\SetStallInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\PacketHandler\SetStallCloseHandler.cpp">
+      <Filter>PacketHandler\Client\SetStallClose</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\ClientPacketHandlerManager.cpp">
+      <Filter>PacketHandler\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\PacketHandler\CActionHandler.cpp">
+      <Filter>PacketHandler\Server\CAction</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\PacketHandler\ChapStringHandler.cpp">
+      <Filter>PacketHandler\Server\ChapString</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\PacketHandler\EnterMapHandler.cpp">
+      <Filter>PacketHandler\Server\EnterMap</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\PacketHandler\LoginResultHandler.cpp">
+      <Filter>PacketHandler\Server\LoginResult</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\PacketHandler\SysInfoHandler.cpp">
+      <Filter>PacketHandler\Server\SysInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\PacketHandler\SynKitbagHandler.cpp">
+      <Filter>PacketHandler\Server\SynKitbag</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\PacketHandler\SetStallSuccessHandler.cpp">
+      <Filter>PacketHandler\Server\SetStallSuccess</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\PacketHandler\SetStallBuyHandler.cpp">
+      <Filter>PacketHandler\Server\SetStallBuy</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\PacketHandler\PingHandler.cpp">
+      <Filter>PacketHandler\Server\Ping</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\ServerPacketHandlerManager.cpp">
+      <Filter>PacketHandler\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\PacketHandler\GMNoticeHandler.cpp">
+      <Filter>PacketHandler\Server\GMNotice</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Account\Account.cpp">
+      <Filter>Class\Account</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Character\Character.cpp">
+      <Filter>Class\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\DES\DES.cpp">
+      <Filter>Class\DES</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\PacketEncoder\PacketEncoder.cpp">
+      <Filter>Class\PacketEncoder</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\PacketEncryptor\PacketEncryptor.cpp">
+      <Filter>Class\PacketEncryptor</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\PasswordEncoder\PasswordEncoder.cpp">
+      <Filter>Class\PasswordEncoder</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Player\Player.cpp">
+      <Filter>Class\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Protection\Protection.cpp">
+      <Filter>Class\Protection</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\SetStall\SetStall.cpp">
+      <Filter>Class\SetStall</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Settings\Settings.cpp">
+      <Filter>Class\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Utils\Utils.cpp">
+      <Filter>Class\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Binary\BaseBinaryIO.cpp">
+      <Filter>Binary</Filter>
+    </ClCompile>
+    <ClCompile Include="Binary\BinaryReader.cpp">
+      <Filter>Binary</Filter>
+    </ClCompile>
+    <ClCompile Include="Binary\BinaryWriter.cpp">
+      <Filter>Binary</Filter>
+    </ClCompile>
+    <ClCompile Include="Socket\BaseSocket.cpp">
+      <Filter>Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="Socket\callback.cpp">
+      <Filter>Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="Socket\ClientSocket.cpp">
+      <Filter>Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="Socket\NetBuffer.cpp">
+      <Filter>Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="Socket\ServerSocket.cpp">
+      <Filter>Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="Pool\ObjectPool.cpp">
+      <Filter>Pool</Filter>
+    </ClCompile>
+    <ClCompile Include="Pool\PlayerMaker.cpp">
+      <Filter>Pool</Filter>
+    </ClCompile>
+    <ClCompile Include="Main\PacketHandlerManager.cpp">
+      <Filter>PacketHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="Main\PKO ProxyServer.cpp">
+      <Filter>Файлы исходного кода\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\ProxyServer\ProxyServer.cpp">
+      <Filter>Class\ProxyServer</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\PacketHandler\EndPlayHandler.cpp">
+      <Filter>PacketHandler\Client\EndPlay</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\PacketHandler\BeginPlayHandler.cpp">
+      <Filter>PacketHandler\Client\BeginPlay</Filter>
+    </ClCompile>
+    <ClCompile Include="Thread\ThreadPool.cpp">
+      <Filter>Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\PacketHandler\BeginSeeHandler.cpp">
+      <Filter>PacketHandler\Server\BeginSee</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\Packet\PopupNoticePacket.cpp">
+      <Filter>Packet\S-&gt;C\PopupNotice</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Server\Packet\CreatePasswordPacket.h">
+      <Filter>Packet\S-&gt;C\CreatePassword</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\Packet\GMNoticePacket.h">
+      <Filter>Packet\S-&gt;C\GMNotice</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\Packet\UpdatePasswordPacket.h">
+      <Filter>Packet\S-&gt;C\UpdatePassword</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\Packet\WrongLoginPacket.h">
+      <Filter>Packet\S-&gt;C\WrongLogin</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\Packet\WrongNewChaPacket.h">
+      <Filter>Packet\S-&gt;C\WrongNewCha</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\Packet\WrongVersionPacket.h">
+      <Filter>Packet\S-&gt;C\WrongVersion</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\Packet\DisconnectPacket.h">
+      <Filter>Packet\C-&gt;S\Disconnect</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\Packet\LoginPacket.h">
+      <Filter>Packet\C-&gt;S\Login</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\Packet\PingPacket.h">
+      <Filter>Packet\C-&gt;S\Ping</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\PacketHandler\AccountLoginHandler.h">
+      <Filter>PacketHandler\Client\AccountLogin</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\PacketHandler\ChangePasswordHandler.h">
+      <Filter>PacketHandler\Client\ChangePassword</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\PacketHandler\CreatePasswordHandler.h">
+      <Filter>PacketHandler\Client\CreatePassword</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\PacketHandler\DisconnectHandler.h">
+      <Filter>PacketHandler\Client\Disconnect</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\PacketHandler\NewChaHandle.h">
+      <Filter>PacketHandler\Client\NewCha</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\PacketHandler\SetStallInfoHandler.h">
+      <Filter>PacketHandler\Client\SetStallInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\PacketHandler\SetStallCloseHandler.h">
+      <Filter>PacketHandler\Client\SetStallClose</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\ClientPacketHandlerManager.h">
+      <Filter>PacketHandler\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\PacketHandler\CActionHandler.h">
+      <Filter>PacketHandler\Server\CAction</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\PacketHandler\ChapStringHandler.h">
+      <Filter>PacketHandler\Server\ChapString</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\PacketHandler\EnterMapHandler.h">
+      <Filter>PacketHandler\Server\EnterMap</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\PacketHandler\LoginResultHandler.h">
+      <Filter>PacketHandler\Server\LoginResult</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\PacketHandler\SysInfoHandler.h">
+      <Filter>PacketHandler\Server\SysInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\PacketHandler\SynKitbagHandler.h">
+      <Filter>PacketHandler\Server\SynKitbag</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\PacketHandler\SetStallSuccessHandler.h">
+      <Filter>PacketHandler\Server\SetStallSuccess</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\PacketHandler\SetStallBuyHandler.h">
+      <Filter>PacketHandler\Server\SetStallBuy</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\PacketHandler\PingHandler.h">
+      <Filter>PacketHandler\Server\Ping</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\ServerPacketHandlerManager.h">
+      <Filter>PacketHandler\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\PacketHandler\GMNoticeHandler.h">
+      <Filter>PacketHandler\Server\GMNotice</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Account\Account.h">
+      <Filter>Class\Account</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Character\Character.h">
+      <Filter>Class\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\DES\DES.h">
+      <Filter>Class\DES</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\PacketEncoder\PacketEncoder.h">
+      <Filter>Class\PacketEncoder</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\PacketEncryptor\PacketEncryptor.h">
+      <Filter>Class\PacketEncryptor</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\PasswordEncoder\PasswordEncoder.h">
+      <Filter>Class\PasswordEncoder</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Player\Player.h">
+      <Filter>Class\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Protection\Protection.h">
+      <Filter>Class\Protection</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\SetStall\SetStall.h">
+      <Filter>Class\SetStall</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Settings\Settings.h">
+      <Filter>Class\Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Utils\Utils.h">
+      <Filter>Class\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Struct\stNetChangeChaPart.h">
+      <Filter>Struct</Filter>
+    </ClInclude>
+    <ClInclude Include="Binary\BaseBinaryIO.h">
+      <Filter>Binary</Filter>
+    </ClInclude>
+    <ClInclude Include="Binary\BinaryReader.h">
+      <Filter>Binary</Filter>
+    </ClInclude>
+    <ClInclude Include="Binary\BinaryWriter.h">
+      <Filter>Binary</Filter>
+    </ClInclude>
+    <ClInclude Include="Socket\BaseSocket.h">
+      <Filter>Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="Socket\callback.h">
+      <Filter>Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="Socket\ClientSocket.h">
+      <Filter>Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="Socket\INetObserver.h">
+      <Filter>Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="Socket\INetSubject.h">
+      <Filter>Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="Socket\ISocket.h">
+      <Filter>Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="Socket\NetBuffer.h">
+      <Filter>Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="Socket\ServerSocket.h">
+      <Filter>Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="Pool\IObjectMaker.h">
+      <Filter>Pool</Filter>
+    </ClInclude>
+    <ClInclude Include="Pool\IPoolable.h">
+      <Filter>Pool</Filter>
+    </ClInclude>
+    <ClInclude Include="Pool\ObjectPool.h">
+      <Filter>Pool</Filter>
+    </ClInclude>
+    <ClInclude Include="Pool\PlayerMaker.h">
+      <Filter>Pool</Filter>
+    </ClInclude>
+    <ClInclude Include="Main\IPacketHandler.h">
+      <Filter>PacketHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="Main\PacketHandlerManager.h">
+      <Filter>PacketHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="Main\IPacket.h">
+      <Filter>Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\ProxyServer\ProxyServer.h">
+      <Filter>Class\ProxyServer</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\WebServer\httplib.h">
+      <Filter>Class\WebServer</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\WebServer\json.hpp">
+      <Filter>Class\WebServer</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\PacketHandler\EndPlayHandler.h">
+      <Filter>PacketHandler\Client\EndPlay</Filter>
+    </ClInclude>
+    <ClInclude Include="Protect\Protect.h">
+      <Filter>Protect</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\PacketHandler\BeginPlayHandler.h">
+      <Filter>PacketHandler\Client\BeginPlay</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread\ThreadPool.hpp">
+      <Filter>Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\PacketHandler\BeginSeeHandler.h">
+      <Filter>PacketHandler\Server\BeginSee</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\Packet\PopupNoticePacket.h">
+      <Filter>Packet\S-&gt;C\PopupNotice</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
