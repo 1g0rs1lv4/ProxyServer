@@ -170,7 +170,7 @@ namespace PKO
 					} 
 					
 					// Запрещаем менять версию
-					/* else if (param == "version") {
+					 else if (param == "version") {
 
 						try {
 							m_wpe_version = static_cast<unsigned short int>(std::stoi(value));
@@ -179,7 +179,7 @@ namespace PKO
 							throw settings_exception("Invalid protection version at line " + std::to_string(line_counter) + "!");
 						}
 
-					} */
+					}
 				}
 				else if (section == "game")
 				{
